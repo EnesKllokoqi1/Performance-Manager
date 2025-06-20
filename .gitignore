@@ -1,0 +1,18 @@
+# Ignore build outputs
+**/bin/
+**/obj/
+
+# User-specific files
+*.user
+*.suo
+
+# VSCode
+.vscode/
+
+# ASP.NET Core runtime files
+*.dll
+*.exe
+
+# UWP package outputs
+*.appx
+*.appxbundle

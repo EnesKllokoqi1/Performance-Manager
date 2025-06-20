@@ -1,0 +1,24 @@
+﻿<Page
+    x:Class="Performance_Manager.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Performance_Manager"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Button x:Name="localButton" Content="A Fast Local Operation" Height="128" Margin="120,88,0,0" VerticalAlignment="Top" Width="387" Click="localButton_Click" IsEnabled="True"/>
+        <Button x:Name="cpuButton" Content="Cpu Bound Operation " Height="150" Margin="120,281,0,0" VerticalAlignment="Top" Width="387" Click="cpuButton_Click"/>
+        <Button x:Name="filterer" Content="Filter The List" Height="139" Margin="190,500,0,0" VerticalAlignment="Top" Width="248" Click="filterer_Click" RenderTransformOrigin="0.544,0.998"/>
+        <Button x:Name="measurer" Content="Measure Operation Time" Height="139" Margin="190,807,0,0" VerticalAlignment="Top" Width="248" RenderTransformOrigin="0.544,1.149" Click="measurer_Click"/>
+        <ListView x:Name="theListView" Margin="998,10,0,10"/>
+        <TextBox x:Name="operationName" HorizontalAlignment="Left" Height="58" Margin="477,848,0,0" TextWrapping="Wrap" PlaceholderText="Enter the exact button name(the operation)" VerticalAlignment="Top" Width="191" RenderTransformOrigin="0.462,2.003"/>
+        <Button x:Name="JSONDataButton" Content="Get Json Data" Height="128" Margin="631,88,0,0" VerticalAlignment="Top" Width="302" Click="JSONDataButton_Click"/>
+        <Button x:Name="urlDownloaderButton" Content="Download Some Urls" Height="150" Margin="631,281,0,0" VerticalAlignment="Top" Width="302" RenderTransformOrigin="0.384,0.167" Background="#330AABFF" Click="Button_Click"/>
+        <Button x:Name="cancelDownLoadButton" Content="Cancel Download" Height="139" Margin="631,500,0,0" VerticalAlignment="Top" Width="260" Click="cancelDownLoadButton_Click"/>
+        <Button x:Name="listViewer" Content="View The List" Height="94" Margin="228,675,0,0" VerticalAlignment="Top" Width="172" RenderTransformOrigin="0.485,-0.096" Click="listViewer_Click" />
+
+    </Grid>
+</Page>
