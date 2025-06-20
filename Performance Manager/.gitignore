@@ -7,7 +7,7 @@
 *.suo
 
 # VSCode
-.vscode/
+.vs/
 
 # ASP.NET Core runtime files
 *.dll
