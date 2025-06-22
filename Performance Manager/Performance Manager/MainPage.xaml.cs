@@ -167,7 +167,7 @@ namespace Performance_Manager
             string content = await message.Content.ReadAsStringAsync();
             AddListItemToListView(content);
             stopWatch.Stop();
-            _buttonTimings["Get Json Data"] = stopWatch.ElapsedMilliseconds;
+            _buttonTimings["Get JSON Data"] = stopWatch.ElapsedMilliseconds;
 
         }
         private async Task<int> Download(string url,CancellationToken cancellationToken)
